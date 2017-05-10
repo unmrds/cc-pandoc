@@ -1,0 +1,106 @@
+%==============================================================================
+%== template for LATEX poster =================================================
+%==============================================================================
+%
+%--A0 beamer slide-------------------------------------------------------------
+\documentclass[final]{beamer}
+
+\usepackage[orientation=landscape,
+            scale=.98         % font scale factor
+           ]{beamerposter}
+\geometry{papersize={60in,36in}}
+\usepackage[numbers,square]{natbib}
+\renewcommand{\bibsection}{\subsubsection*{\bibname } } % eliminates the unwanted bibliography section head
+\renewcommand{\newblock}{}
+\bibliographystyle{abbrvnat}
+
+
+%\setlength{\paperwidth}{33.1in}
+%\setlength{\paperheight}{23.4in}
+\setlength{\paperwidth}{60in}
+\setlength{\paperheight}{36in}
+           
+\geometry{
+  hmargin=2.5cm, % little modification of margins
+}
+
+
+%
+\usepackage[utf8]{inputenc}
+
+\linespread{1.15}
+%
+%==The poster style============================================================
+\usetheme{sharelatex}
+
+%==Title, date and authors of the poster=======================================
+\title
+$if(conference)$[$conference$]$endif$ % Conference
+{ % Poster title
+$title$
+}
+
+\author{ % Authors
+$if(author)$
+$for(author)$
+$author.name$\inst{$author.affiliation-label$}$sep$ \and $endfor$
+$endif$
+}
+
+$if(author)$
+\institute{
+$for(author)$
+\inst{$author.affiliation-label$} $author.affiliation$
+$endfor$
+}
+$endif$
+
+
+\date{$date$}
+
+
+
+\begin{document}
+\begin{frame}[t]
+%==============================================================================
+\begin{multicols}{3}
+
+%--abstract-------------------------------------------------------------
+
+$if(abstract)$
+\subsection{Abstract}
+
+$abstract$
+
+$endif$
+%--End of abstract------------------------------------------------------
+
+
+
+
+%==============================================================================
+%==The poster content==========================================================
+%==============================================================================
+
+$body$
+
+%==============================================================================
+%==End of content==============================================================
+%==============================================================================
+
+\begin{footnotesize}
+
+
+%--References------------------------------------------------------------------
+
+\bibliography{2016-12_AGUPoster.bib}
+
+%--End of references-----------------------------------------------------------
+
+\end{footnotesize}
+
+\end{multicols}
+
+%==============================================================================
+\end{frame}
+\end{document}

@@ -1,0 +1,21 @@
+h1.title {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+h2.author {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-style: italic;
+}
+
+#header h3.date {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+html {
+	background-color: #e5e5e5;
+}

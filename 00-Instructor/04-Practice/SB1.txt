@@ -1,0 +1,15 @@
+% This is my document
+% Stephanie Beene
+% April 2017
+
+# HELLLLOOOOO
+
+## This is a text file 
+
+### Online of course
+
+* Pandoc is a a new thing for me
+* Write once, multiple outputs
+    * PDFs
+    * Bibliographies
+* Even online files like this!

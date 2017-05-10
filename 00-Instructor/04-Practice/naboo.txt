@@ -1,0 +1,10 @@
+# Heading 1
+
+Hello World - this is as simple as it gets ...
+
+This is pandoc and jupyter. testing this thing.
+Reminds me of XYWRITE from OTa many years ago in DC when we would enter text and it would prepare it for publishing.
+
+% TEST
+% Nancy
+% April 24, 2017

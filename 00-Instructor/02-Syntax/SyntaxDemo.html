@@ -1,0 +1,144 @@
+<h1 id="level-one">Level One</h1>
+<p>Fatback labore cupidatat meatball quis. Consequat kevin commodo ipsum laborum ham hock aute jerky pastrami deserunt cillum non turducken. In irure bresaola cupidatat laborum alcatra. In flank do labore kevin, filet mignon in. Dolore chicken beef ribs ribeye cow. Commodo cupidatat shankle laboris, exercitation pastrami magna porchetta.</p>
+<h2 id="level-two">Level Two</h2>
+<p>Chuck pork consequat, biltong pork loin meatball pancetta brisket commodo anim. Cupidatat capicola pancetta, excepteur ribeye ex hamburger prosciutto elit filet mignon. Aliquip voluptate est occaecat pancetta meatloaf sunt commodo laborum spare ribs. Cupidatat commodo shank, culpa fugiat veniam dolore dolor consequat. Beef shank landjaeger short loin. Nisi flank ad, alcatra prosciutto consequat ullamco.</p>
+<h3 id="level-three">Level Three</h3>
+<p>Officia alcatra anim fugiat. Laborum bresaola shoulder beef doner pork belly et burgdoggen. Commodo swine culpa ad shank voluptate cow kevin elit strip steak minim. Swine ullamco burgdoggen chuck est occaecat dolore meatball reprehenderit deserunt jerky adipisicing. Sed venison aliquip officia short ribs. Irure drumstick tempor reprehenderit kielbasa brisket. Ea swine kielbasa pork chop picanha pancetta.</p>
+<h4 id="level-four">Level Four</h4>
+<p>Cillum turducken consectetur ut tri-tip short ribs t-bone meatloaf venison cupidatat labore. Aliqua tail esse, filet mignon cupim drumstick ut nostrud. Ribeye laborum aliquip, ad voluptate aliqua biltong commodo pig burgdoggen nulla. In boudin chuck aute labore ad alcatra pig deserunt strip steak picanha mollit shank nostrud burgdoggen. Commodo tongue deserunt, brisket ball tip voluptate magna turducken.</p>
+<h5 id="level-five">Level Five</h5>
+<p>Capicola hamburger duis minim. Andouille sed dolore sunt voluptate exercitation bacon anim eu capicola sausage burgdoggen brisket. T-bone pastrami lorem, in short loin dolore sed pork chop incididunt turducken exercitation. Quis ribeye boudin, dolore turkey shoulder do rump aliquip picanha adipisicing. Aute enim ex, ad corned beef aliqua in eiusmod culpa incididunt.</p>
+<h6 id="level-six">Level Six</h6>
+<p>Labore eiusmod magna chuck occaecat ribeye pig sed. Occaecat nisi id ut deserunt anim drumstick pastrami cow. Meatloaf culpa pork loin swine nisi, dolore tri-tip sirloin andouille nostrud salami tongue lorem porchetta. Pastrami kielbasa landjaeger tenderloin.</p>
+<h1 id="level-one-1">Level One</h1>
+<p>Fatback labore cupidatat meatball quis. Consequat kevin commodo ipsum laborum ham hock aute jerky pastrami deserunt cillum non turducken. In irure bresaola cupidatat laborum alcatra. In flank do labore kevin, filet mignon in. Dolore chicken beef ribs ribeye cow. Commodo cupidatat shankle laboris, exercitation pastrami magna porchetta.</p>
+<h2 id="level-two-1">Level Two</h2>
+<p>Chuck pork consequat, biltong pork loin meatball pancetta brisket commodo anim. Cupidatat capicola pancetta, excepteur ribeye ex hamburger prosciutto elit filet mignon. Aliquip voluptate est occaecat pancetta meatloaf sunt commodo laborum spare ribs. Cupidatat commodo shank, culpa fugiat veniam dolore dolor consequat. Beef shank landjaeger short loin. Nisi flank ad, alcatra prosciutto consequat ullamco.</p>
+<hr />
+<blockquote>
+<p>this is a multiline quote</p>
+</blockquote>
+<blockquote>
+<p>this is another multiline quote</p>
+</blockquote>
+<ul>
+<li>List Item 1</li>
+<li>List Item 2
+<ul>
+<li>List Item 2a</li>
+<li>List Item 2b</li>
+</ul></li>
+<li>List Item 3</li>
+</ul>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1
+</dd>
+<dt>Term 2</dt>
+<dd>Definition 2a
+</dd>
+<dd>Definition 2b
+</dd>
+</dl>
+<ol class="example" style="list-style-type: decimal">
+<li>My first example will be numbered (1).</li>
+<li>My second example will be numbered (2).</li>
+</ol>
+<p>Explanation of examples.</p>
+<ol start="3" class="example" style="list-style-type: decimal">
+<li><p>My third example will be numbered (3).</p></li>
+<li><p>This is a good example.</p></li>
+</ol>
+<p>As (4) illustrates, ...</p>
+<pre><code>pandoc -s -S \
+--normalize \
+--filter pandoc-citeproc \
+--csl ./science.csl \
+--natbib \
+--template=poster.tex \
+-f markdown+raw_tex \
+-o 2016-12_AGUPoster.tex \
+2016-12_AGUPoster.md</code></pre>
+<pre><code>pandoc -s -S \
+--normalize \
+--filter pandoc-citeproc \
+--csl ./science.csl \
+--natbib \
+--template=poster.tex \
+-f markdown+raw_tex \
+-o 2016-12_AGUPoster.tex \
+2016-12_AGUPoster.md</code></pre>
+<div class="sourceCode" id="mycode" startFrom="15"><table class="sourceCode bash numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="sourceCode"><pre><code class="sourceCode bash"><span class="ex">pandoc</span> -s -S \
+--normalize \
+--filter pandoc-citeproc \
+--csl ./science.csl \
+--natbib \
+--template=poster.tex \
+-f markdown+raw_tex \
+-o 2016-12_AGUPoster.tex \
+2016-12_AGUPoster.md</code></pre></td></tr></table></div>
+<div style="white-space: pre-line;">Karl Benedict
+MSC05 3020
+1 University of New Mexico
+Albuquerque, NM
+             98131</div>
+<hr />
+<p>Here is an emphasized <em>word</em></p>
+<p>This is another way to define an emphasized <em>word</em></p>
+<p>Here is a strongly emphasized <strong>word</strong></p>
+<p>This is another way to define a strongly emphasized <strong>word</strong></p>
+<p>e=mc<sup>2</sup></p>
+<p>H<sub>2</sub>O</p>
+<p>I meant this instead of <del>that</del></p>
+<p>You should enter <code>pandoc</code> on the command line to start a document processing command.</p>
+<hr />
+<p>The Google<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> search engine may be used to ...</p>
+<p>This my text with a two-part footnote<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. The actual actual label text used doesn't matter, except that it can't contain spaces, tabs or newlines<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>.</p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th align="right">Right</th>
+<th align="left">Left</th>
+<th align="center">Center</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">12</td>
+<td align="center">12</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td align="right">123</td>
+<td align="left">123</td>
+<td align="center">123</td>
+<td>123</td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">1</td>
+<td align="center">1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>http://www.google.com<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>this is the text for the first footnote<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>this is the text for the secondd footnote.<a href="#fnref3">↩</a></p></li>
+</ol>
+</div>
